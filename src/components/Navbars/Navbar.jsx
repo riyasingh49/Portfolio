@@ -5,10 +5,10 @@ import logo from '../../assets/logo.jpg'
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <img src = {logo} alt=''/>
+      <img src = {logo} alt='' className = "img"/>
       <ul className='nav-menu'>
         <li>Home</li>
-        <li>About</li>
+        <li>About me</li>
         <li>Courses & Certifications</li>
         <li>Skills</li>
         <li>Projects</li>
