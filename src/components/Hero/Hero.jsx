@@ -1,11 +1,11 @@
 import React from 'react'
 import './Hero.css'
-const Hero = () => {
-  return (
-    <div className='Hero'>
-      
-    </div>
-  )
+function Hero() {
+    return (
+        <div className='Hero'>
+
+        </div>
+    );
 }
 
-export default Hero
+export default Hero;
