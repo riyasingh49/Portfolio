@@ -12,7 +12,7 @@
     gap: 40px;
 }
 .skills-container{
-    display: flex;
+    display: grid;
     flex-direction : column;
     border: 1px solid white;
     align-items: center;
@@ -22,6 +22,7 @@
     /* justify-content: space-around;  */
     margin-bottom: 40px;
     padding: 20px;
+
     
 }
 .skills-container:hover{

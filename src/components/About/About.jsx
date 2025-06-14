@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
 import Riya from "../../assets/Riya.jpeg";
-import a from "../../assets/a.png";
 
 const About = () => {
   return (
@@ -16,7 +15,7 @@ const About = () => {
         <div className="about-right">
           <div className="about-para">
             <p>
-              I’m an aspiring full stack developer with hands-on experience in
+              I'm an aspiring full stack developer with hands-on experience in
               building responsive web applications. I specialize in creating
               user-friendly frontends with React, Bootstrap, HTML, CSS, and
               JavaScript, and developing robust backends using Java, JDBC, and
