@@ -1,0 +1,41 @@
+.certifications{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 80px;
+    margin: 80px 130px;
+}
+.certificates-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+}
+.certificates-title h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.certificates-title p{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    line-height: 30px;
+    text-align: center;
+    /* padding: 20px; */
+    color: #A9A9A9;
+    font-size: 20px;
+}
+.certification img{
+    height: 200px;
+    width: 300px;
+    gap: 20px;
+    padding: 20px;
+    image-align : center;
+    position: realtive;
+}
+.certification img:hover{
+    transform: scale(1.15);
+    transition: 0.5s;
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Skills.css";
-import java from "../../assets/java.svg";
 
 const Skills = () => {
   return (
@@ -15,7 +14,7 @@ const Skills = () => {
           <h1>Programming Skills</h1>
           <ul className="skills-menu">
             <li>Java</li>
-            <li>C programming</li>
+            <li>C Programming</li>
             <li>Javascript</li>
             </ul>
         </div>
