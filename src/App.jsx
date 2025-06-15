@@ -12,7 +12,7 @@ function App() {
      <Hero />
      <About />
      <Skills />
-     <TechStack />
+     {/* <TechStack /> */}
     </div>
   );
 }
