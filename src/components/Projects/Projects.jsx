@@ -16,20 +16,20 @@ const Projects = () => {
       <div className="project">
         <div className="project-container">
           <img src={Freshmart} alt="" />
+          <h1>E-commerce Website</h1>
           <p>
             A responsive grocery e-commerce website with clean UI, built using
             HTML, CSS, and JavaScript for smooth browsing across all devices.
           </p>
-          <div className="button"></div>
+          <div className="button">Show</div>
         </div>
         <div className="project-container">
           <img src={SMS} alt="" />
+          <h1>Student Management System</h1>
           <p>
-            A desktop application built with Java (Swing) and MySQL, enabling
-            add/view/update/delete operations for student records. Features a
-            clean UI and robust database integration using JDBC.
+          Desktop app using Java Swing and MySQL for managing student records with CRUD operations and JDBC integration.
           </p>
-          <div className="button">s</div>
+          <div className="button"></div>
         </div>
       </div>
     </div>
