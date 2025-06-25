@@ -8,8 +8,8 @@ const Navbar = () => {
       <img src = {logo} alt='' className = "img"/>
       <ul className='nav-menu'>
         <li>Home</li>
-        <li>About me</li>
-        <li>My Achievements & Certifications</li>
+        <li>About</li>
+        <li>Certifications</li>
         <li>Skills</li>
         <li>Projects</li>
         <li>Contact info</li>

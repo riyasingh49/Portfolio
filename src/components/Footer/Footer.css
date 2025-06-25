@@ -1,0 +1,31 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background: #181818;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    margin-bottom: 150px;
+}
+.footer-hero{
+    position: relative;
+}
+.footer-hero h1{
+    font-size: 34px;
+    font-weight: 700;
+}
+.footer-navbar{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+}
+.footer-connection img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.footer hr{
+    width: 100%;
+}

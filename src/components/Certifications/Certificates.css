@@ -39,6 +39,7 @@
 .certification img:hover{
     transform: scale(1.15);
     transition: 0.5s;
+    /* cursor: pointer; */
 }
 /* .certification{
     display: grid;

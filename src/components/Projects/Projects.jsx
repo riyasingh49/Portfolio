@@ -21,7 +21,7 @@ const Projects = () => {
             A responsive grocery e-commerce website with clean UI, built using
             HTML, CSS, and JavaScript for smooth browsing across all devices.
           </p>
-          <div className="button">Show</div>
+          <div className="button">View Project</div>
         </div>
         <div className="project-container">
           <img src={SMS} alt="" />
@@ -29,9 +29,11 @@ const Projects = () => {
           <p>
           Desktop app using Java Swing and MySQL for managing student records with CRUD operations and JDBC integration.
           </p>
-          <div className="button"></div>
+          <div className="button">View Project</div>
         </div>
       </div>
+      <div className="button1">More Projects </div>
+
     </div>
   );
 };

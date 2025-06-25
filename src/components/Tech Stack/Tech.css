@@ -3,9 +3,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 80px;
   margin: 80px 130px;
   margin-bottom: 150px;
+  /* background-color: #181818; */
 }
 .techstack-title {
   position: relative;
@@ -29,11 +30,11 @@
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
   gap: 40px;
   justify-items: center;
-  width: "40%";
+  width: "40px";
 }
 
 .tech-card {
-  /* width: '100%'; */
+  width: 400px;
   height: 200px;
   padding: 10px 30px;
   border-radius: 20px;

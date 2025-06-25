@@ -6,6 +6,8 @@ import Skills from './components/Skills/Skills';
 import TechStack from './components/Tech Stack/Tech';
 import Certificates from './components/Certifications/Certificates';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
      <TechStack />
      <Certificates />
      <Projects/>
+     <Contact />
+     <Footer/>
     </div>
   );
 }
