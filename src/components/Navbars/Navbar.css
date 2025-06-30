@@ -15,6 +15,11 @@
   gap: 50px;
   font-size: 16px;
 }
+.nav-menu li:hover{
+  color: #EE82EE;
+  /* transition: 0.3s; */
+  cursor: pointer;
+}
 .nav-connect{
   margin : 30px;
   padding: 15px 25px;
@@ -26,4 +31,8 @@
 }
 .nav-connect:hover{
   transform: scale(1.05);
+}
+.anchor-link{
+  text-decoration: none;
+  color: white;
 }

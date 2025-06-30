@@ -50,6 +50,12 @@
     align-items: center;
     gap: 20px;
 }
+.contact-detail a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    color: #D8D8D8;
+}
 .contact-detail img{
     height: 30px;
     width: 30px;
