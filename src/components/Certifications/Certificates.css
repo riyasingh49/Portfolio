@@ -1,46 +1,66 @@
-.certifications{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    margin: 80px 130px;
-    margin-bottom: 100px;
+.certifications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 80px 130px;
+  margin-bottom: 100px;
 }
-.certificates-title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* padding: 20px; */
+.certificates-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 20px; */
 }
-.certificates-title h1{
-    font-size: 60px;
-    font-weight: 600;
-    margin-bottom: 30px;
+.certificates-title h1 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
-.certificates-title p{
-    /* display: flex;
+.certificates-title p {
+  /* display: flex;
     flex-direction: column;
     align-items: center; */
-    line-height: 30px;
-    text-align: center;
-    /* padding: 20px; */
-    color: #A9A9A9;
-    font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  /* padding: 20px; */
+  color: #a9a9a9;
+  font-size: 20px;
 }
-.certification img{
+.certification img {
+  height: 200px;
+  width: 300px;
+  gap: 20px;
+  padding: 20px;
+  image-align: center;
+  position: realtive;
+}
+.certification img:hover {
+  transform: scale(1.08);
+  transition: 0.5s;
+  /* cursor: pointer; */
+}
+@media (max-width: 768px) {
+  .certifications {
+    gap: 60px;
+    margin: 50px 70px;
+    align-items: center;
+  }
+  .certificates-title h1 {
+    font-size: 50px;
+  }
+  .certificates-title p {
+    font-size: 16px;
+  }
+  .certification {
+    width: 90%;
+    align-items: center;
+  }
+  .certification img {
     height: 200px;
-    width: 300px;
-    gap: 20px;
+    width: 250px;
     padding: 20px;
-    image-align : center;
-    position: realtive;
+    image-align: center;
+  }
 }
-.certification img:hover{
-    transform: scale(1.08);
-    transition: 0.5s;
-    /* cursor: pointer; */
-}
-/* .certification{
-    display: grid;
-} */

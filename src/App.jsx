@@ -1,4 +1,5 @@
 import React from 'react'
+import "./App.css"
 import Navbar from './components/Navbars/Navbar'
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
@@ -11,17 +12,19 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div>
+    <>
+    <div className='portfolio'>
      <Navbar />
      <Hero />
      <About />
      {/* <Skills /> */}
-     <TechStack />
      <Certificates />
+     <TechStack />
      <Projects/>
      <Contact />
-     <Footer/>
     </div>
+    <Footer/></>
+    
   );
 }
 

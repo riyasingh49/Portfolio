@@ -4,6 +4,7 @@ import mail from "../../assets/mail.png";
 import git from "../../assets/git.png";
 import linkedin from "../../assets/linkedin.png";
 import map from "../../assets/map.png";
+
 const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -61,8 +62,11 @@ const Contact = () => {
             </div>
             <div className="contact-detail">
               <img src={linkedin} alt="" />
-              <a href="https://www.linkedin.com/in/riya-singh-138b352a4"target="_blank"
-                rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/riya-singh-138b352a4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 linkedin.com/in/riya-singh-138b352a4
               </a>
             </div>

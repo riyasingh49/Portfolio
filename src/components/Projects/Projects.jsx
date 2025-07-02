@@ -21,7 +21,7 @@ const Projects = () => {
             A responsive grocery e-commerce website with clean UI, built using
             HTML, CSS, and JavaScript for smooth browsing across all devices.
           </p>
-          <div className="button"><a href="https://riyasingh49.github.io/FreshMart/">View Project</a></div>
+          <div className="button"><a href="https://riyasingh49.github.io/FreshMart/" target="_blank" rel = "noopener noreferrer">View Project</a></div>
         </div>
         <div className="project-container">
           <img src={SMS} alt="" />
@@ -29,10 +29,10 @@ const Projects = () => {
           <p>
           Desktop app using Java Swing and MySQL for managing student records with CRUD operations and JDBC integration.
           </p>
-          <div className="button"><a href="https://github.com/riyasingh49/student-management-system.git">View Project</a></div>
+          <div className="button"><a href="https://github.com/riyasingh49/student-management-system.git" target="_blank" rel = "noopener noreferrer">View Project</a></div>
         </div>
       </div>
-      <div className="button1"><a href="https://github.com/riyasingh49">More Projects</a> </div>
+      <div className="button1"><a href="https://github.com/riyasingh49" target="_blank" rel = "noopener noreferrer">More Projects</a> </div>
 
     </div>
   );

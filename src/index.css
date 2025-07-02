@@ -1,10 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-body{
-  height: 100vh;
-  background: black;
+
+html, body, #root {
+  width: 100vw;
+  min-height: 100vh;
+  background: black; /* or your preferred color */
   color: white;
-  font-family: 'outfit';
+  font-family: 'Outfit', sans-serif;
+  overflow-x: hidden;
 }
