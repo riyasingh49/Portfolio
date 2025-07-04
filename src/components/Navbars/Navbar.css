@@ -8,9 +8,11 @@
   padding: 0 20px; /* Add horizontal padding */
 }
 
+
 .img {
   width: 200px;
-  height: 70px;
+  height: 80px;
+  transform: translate(-40px, -20px);
 }
 
 .nav-menu {
@@ -52,6 +54,7 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
+  
   .navbar {
     margin: 20px auto;
     padding: 0px 20px;
@@ -100,4 +103,40 @@
     display: flex;
     gap: 20px;
   }
+}
+  @media(max-width: 430px){
+    .img {
+      width: 170px;
+      height: 70px;
+      transform: translate(-40px, -20px);
+    }
+    .navbar {
+      margin: 10px auto;
+      padding: 0px 10px;
+    }
+    .nav-open {
+      width: 25px;
+      height: 25px;
+      display: block;
+      position: fixed;
+      right: 20px;
+      top: 20px;
+    }
+    .nav-close {
+      width: 25px;
+      height: 25px;
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 130px;
+    }
+    .nav-menu li {
+      font-size: 20px;
+      padding-left: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    .nav-menu{
+      width: 180px;
+    }
 }

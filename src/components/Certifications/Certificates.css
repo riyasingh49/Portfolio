@@ -61,6 +61,32 @@
     height: 200px;
     width: 250px;
     padding: 20px;
-    image-align: center;
+    justify-content: center;
+  align-items: center;
+  }
+}
+@media(max-width: 430px){
+  .certifications {
+    gap: 30px;
+    margin: 30px 20px;
+    align-items: center;
+  }
+  .certificates-title h1 {
+    font-size: 40px;
+  }
+  .certificates-title p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .certification {
+    width: 83%;
+    align-items: center;
+  }
+  .certification img {
+    height: 200px;
+    width: 250px;
+    padding: 20px;
+    justify-content: center;
+  align-items: center;
   }
 }
