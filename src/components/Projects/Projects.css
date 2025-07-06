@@ -27,7 +27,6 @@
   align-items: center;
 }
 .project-container {
-  border: 1px solid #303030;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +54,7 @@
   margin: 0px 20px;
   color: #a9a9a9;
   text-align: start;
-  font-size: 14px;
+  font-size: 16px;
 }
 .project-container img {
   width: 350px;
@@ -140,4 +139,27 @@
     margin: 10px;
     border: none;
   }
+}
+@media(max-width: 430px){
+  .projects {
+    gap: 30px;
+    margin: 30px 20px;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .project-title h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .project-title p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
 }

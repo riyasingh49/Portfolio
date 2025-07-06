@@ -114,6 +114,7 @@
   }
   .tech-title {
     font-size: 25px;
+    margin-bottom: 5px;
   }
   .tech-skills-row {
     padding: 5px 15px;
@@ -126,5 +127,45 @@
   }
   .skill-icon {
     font-size: 18px;
+  }
+}
+@media(max-width: 430px){
+  .techstack {
+    gap: 30px;
+    margin: 30px 20px;
+    align-items: center;
+    margin-bottom: 90px;
+  }
+  .techstack-title h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .techstack-title p{
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .techstack-container {
+    gap: 15px;
+  }
+  .tech-card {
+    width: 160px;
+    height: 180px;
+    box-shadow: 1px 1px 1px 2px #483d8b;
+    padding: 15px 10px;
+  }
+  .tech-title {
+    font-size: 22px;
+  }
+  .tech-skills-row {
+    padding: 5px 5px;
+  }
+  .skill-pill {
+    font-size: 12px;
+  }
+  .skill-label {
+    font-size: 8px;
+  }
+  .skill-icon {
+    font-size: 10px;
   }
 }
