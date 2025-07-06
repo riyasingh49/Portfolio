@@ -11,7 +11,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 20px; */
 }
 .certificates-title h1 {
   font-size: 60px;
@@ -19,12 +18,8 @@
   margin-bottom: 30px;
 }
 .certificates-title p {
-  /* display: flex;
-    flex-direction: column;
-    align-items: center; */
   line-height: 30px;
   text-align: center;
-  /* padding: 20px; */
   color: #a9a9a9;
   font-size: 20px;
 }
@@ -39,7 +34,6 @@
 .certification img:hover {
   transform: scale(1.08);
   transition: 0.5s;
-  /* cursor: pointer; */
 }
 @media (max-width: 768px) {
   .certifications {
@@ -62,10 +56,10 @@
     width: 250px;
     padding: 20px;
     justify-content: center;
-  align-items: center;
+    align-items: center;
   }
 }
-@media(max-width: 430px){
+@media (max-width: 430px) {
   .certifications {
     gap: 30px;
     margin: 30px 20px;
@@ -89,6 +83,6 @@
     width: 250px;
     padding: 20px;
     justify-content: center;
-  align-items: center;
+    align-items: center;
   }
 }

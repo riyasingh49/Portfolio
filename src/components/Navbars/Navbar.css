@@ -1,20 +1,16 @@
-/* Desktop & default styles */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1800px;
-  margin: 0px auto; /* Center the navbar horizontally */
-  padding: 0 20px; /* Add horizontal padding */
+  margin: 0px auto;
+  padding: 0 20px;
 }
-
-
 .img {
   width: 200px;
   height: 80px;
   transform: translate(-40px, -20px);
 }
-
 .nav-menu {
   display: flex;
   align-items: center;
@@ -22,12 +18,10 @@
   gap: 50px;
   font-size: 16px;
 }
-
 .nav-menu li:hover {
   color: #ee82ee;
   cursor: pointer;
 }
-
 .nav-connect {
   margin: 30px 0px;
   padding: 15px 25px;
@@ -37,33 +31,25 @@
   cursor: pointer;
   transition: 0.2s;
 }
-
 .nav-connect:hover {
   transform: scale(1.05);
 }
-
 .anchor-link {
   text-decoration: none;
   color: white;
 }
-
 .nav-close,
 .nav-open {
   display: none;
 }
-
-/* Responsive styles */
 @media (max-width: 768px) {
-  
   .navbar {
     margin: 20px auto;
     padding: 0px 20px;
   }
-
   .nav-connect {
     display: none;
   }
-
   .nav-open {
     width: 30px;
     height: 30px;
@@ -72,7 +58,6 @@
     right: 30px;
     top: 30px;
   }
-
   .nav-close {
     width: 30px;
     height: 30px;
@@ -81,7 +66,6 @@
     top: 30px;
     left: 200px;
   }
-
   .nav-menu {
     position: fixed;
     flex-direction: column;
@@ -96,7 +80,6 @@
     transition: right 0.5s ease-in-out;
     padding-top: 60px;
   }
-
   .nav-menu li {
     font-size: 30px;
     padding-left: 30px;
@@ -104,39 +87,39 @@
     gap: 20px;
   }
 }
-  @media(max-width: 430px){
-    .img {
-      width: 170px;
-      height: 70px;
-      transform: translate(-40px, -20px);
-    }
-    .navbar {
-      margin: 10px auto;
-      padding: 0px 10px;
-    }
-    .nav-open {
-      width: 25px;
-      height: 25px;
-      display: block;
-      position: fixed;
-      right: 20px;
-      top: 20px;
-    }
-    .nav-close {
-      width: 25px;
-      height: 25px;
-      display: block;
-      position: absolute;
-      top: 20px;
-      left: 130px;
-    }
-    .nav-menu li {
-      font-size: 20px;
-      padding-left: 20px;
-      display: flex;
-      gap: 10px;
-    }
-    .nav-menu{
-      width: 180px;
-    }
+@media (max-width: 430px) {
+  .img {
+    width: 170px;
+    height: 70px;
+    transform: translate(-40px, -20px);
+  }
+  .navbar {
+    margin: 10px auto;
+    padding: 0px 10px;
+  }
+  .nav-open {
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  .nav-close {
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 130px;
+  }
+  .nav-menu li {
+    font-size: 20px;
+    padding-left: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  .nav-menu {
+    width: 180px;
+  }
 }

@@ -55,8 +55,8 @@
     font-size: 14px;
   }
 }
-@media(max-width: 430px){
-  .footer{
+@media (max-width: 430px) {
+  .footer {
     padding: 10px 20px;
     padding-top: 20px;
   }
@@ -75,7 +75,7 @@
   .footer-bottom p {
     font-size: 10px;
   }
-  .footer-bottom{
+  .footer-bottom {
     height: px;
   }
 }

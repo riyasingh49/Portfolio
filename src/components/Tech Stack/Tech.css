@@ -6,7 +6,6 @@
   gap: 40px;
   margin: 80px 130px;
   margin-bottom: 150px;
-  /* background-color: #181818; */
 }
 .techstack-title {
   position: relative;
@@ -32,7 +31,6 @@
   justify-items: center;
   width: "40px";
 }
-
 .tech-card {
   width: 450px;
   height: 230px;
@@ -55,33 +53,26 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .tech-skills-row {
-  /* background-color: #181818;  */
   padding: 5px 30px;
-  /* border-radius: 40px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
-
 .skill-pill {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 18px;
-  /* background-color: #404040;  */
   border: 1px solid #404040;
   padding: 5px;
   border-radius: 10px;
   color: #181818;
 }
-
 .skill-icon {
   font-size: 30px;
 }
-
 .skill-pill:hover {
   transition: transform 0.2s ease;
   transform: scale(1.05);
