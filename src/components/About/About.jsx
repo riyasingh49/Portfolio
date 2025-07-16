@@ -9,9 +9,9 @@ const About = () => {
         <h1>About me</h1>
       </div>
       <div className="about-sections">
-        <div className="about-left">
+        {/* <div className="about-left">
           <img src={Riya} alt="" />
-        </div>
+        </div> */}
         <div className="about-right">
           <div className="about-para">
             <p>
