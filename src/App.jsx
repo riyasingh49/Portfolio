@@ -8,6 +8,7 @@ import Certificates from './components/Certifications/Certificates';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import Experience from './components/Experience/Experience';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
      <Certificates />
      <TechStack />
      <Projects/>
+     <Experience/>
      <Contact />
     </div>
     <Footer/></>
