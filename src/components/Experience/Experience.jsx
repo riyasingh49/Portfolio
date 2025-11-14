@@ -12,10 +12,10 @@ const Experience = () => {
         
 
         <div className="Exp-Intro">
-            <h2> Virtual Internship - AI and Data Analytics Intern (Green Skills) </h2>
+            <h2> Remote Internship - AI and Data Analytics Intern (Green Skills) </h2>
             <h3>AICTE x Shell x Edunet Foundation</h3>
             <h4>Aug 2025 - Sep 2025</h4>
-            <p>During my AICTE–Shell–Edunet Foundation internship on AI and Data Analytics, I developed an Air Quality Forecast model using Python, Pandas, NumPy, and Scikit-learn for AQI prediction through data preprocessing, feature engineering, and model training.</p>
+            <p>Contributed to developing data-driven machine learning solutions using Python, Pandas, NumPy, and Scikit-learn. Worked on data preprocessing, feature engineering, and model training tasks as part of the AICTE–Shell–Edunet Foundation Green Skills program.</p>
         </div>
       
         </div>
