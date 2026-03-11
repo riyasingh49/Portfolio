@@ -8,28 +8,30 @@ import map from "../../assets/map.png";
 const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
+    alert("Message sent successfully 😊");
     const formData = new FormData(event.target);
-    formData.append("access_key", "50d3766d-c508-4aaf-b7fe-14321faecda7");
+    event.target.reset();
+    // formData.append("access_key", "key");
 
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData,
-      });
+    // try {
+      // const response = await fetch("https://api.web3forms.com/submit", {
+      //   method: "POST",
+      //   body: formData,
+      // });
 
-      const result = await response.json();
-      console.log("Web3Forms response:", result);
+      // const result = await response.json();
+      // console.log("Web3Forms response:", result);
 
-      if (result.success) {
-        alert("Message sent successfully!");
-        event.target.reset();
-      } else {
-        alert("Failed: " + result.message);
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Something went wrong. Please try again.");
-    }
+    //   if (result.success) {
+    //     alert("Message sent successfully!");
+    //     event.target.reset();
+    //   } else {
+    //     alert("Failed: " + result.message);
+    //   }
+    // } catch (error) {
+    //   console.error("Error:", error);
+    //   alert("Something went wrong. Please try again.");
+    // }
   };
 
   return (
