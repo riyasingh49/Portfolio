@@ -8,7 +8,7 @@ import map from "../../assets/map.png";
 const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
-    alert("Message sent successfully 😊");
+    alert("Message sent successfully ");
     const formData = new FormData(event.target);
     event.target.reset();
     // formData.append("access_key", "key");
