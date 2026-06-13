@@ -78,7 +78,7 @@
   color: #909090;
   font-size: 18px;
   border-radius: 4px;
-  font-family: outfit;
+  font-family: "Nunito", sans-serif;
 }
 .contact-right textarea {
   border: none;
@@ -87,7 +87,7 @@
   border-radius: 4px;
   background: #303030;
   color: #909090;
-  font-family: outfit;
+  font-family: "Nunito", sans-serif;
   font-size: 18px;
 }
 .contact-submit {

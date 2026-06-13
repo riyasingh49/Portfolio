@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Projects.css";
 import Freshmart from "../../assets/Freshmart.png";
 import SMS from "../../assets/SMS.png";
+import R49 from "../../assets/R49.png";
+import ImageSearchEngine from "../../assets/Image_Search_Engine.png";
+import Portfolio from "../../assets/portfolio.png";
+import Air from "../../assets/air.png";
+import MazeGame from "../../assets/maze game.png";
+import HostelAttendance from "../../assets/Hostel_Facial_Attendance_System.png";
+
+const INITIAL_PROJECT_COUNT = 6;
+const GITHUB_PROFILE_URL = "https://github.com/riyasingh49";
 
 const projectItems = [
   {
@@ -18,9 +27,66 @@ const projectItems = [
       "Desktop app using Java Swing and MySQL for managing student records with CRUD operations and JDBC integration.",
     url: "https://github.com/riyasingh49/student-management-system.git",
   },
+  {
+    image: R49,
+    title: "R49",
+    description:
+      "An interactive React and GSAP based web project with reusable components, Tailwind CSS, responsive layouts, and modern UI transitions.",
+    url: "https://riyasingh49.github.io/R49/",
+  },
+  {
+    image: ImageSearchEngine,
+    title: "Image Search Engine",
+    description:
+      "An image search application with real-time Unsplash API integration, backend routing, keyword search, and responsive rendering.",
+    url: "https://image-search-engine-one-eta.vercel.app",
+  },
+  {
+    image: Portfolio,
+    title: "Portfolio",
+    description:
+      "A responsive personal portfolio showcasing projects, skills, certifications, experience, and contact details in a clean dark theme.",
+    url: "https://riyasingh49.github.io/Portfolio/",
+  },
+  {
+    image: MazeGame,
+    title: "Maze Game",
+    description:
+      "A Python/Pygame 2D maze adventure with DFS-generated mazes, diamonds, snakes, timer-based gameplay, themes, score tracking, replay screens, and an AI mode using A* pathfinding.",
+    url: "https://github.com/riyasingh49/maze-game.git",
+  },
+  {
+    image: Air,
+    title: "Air Quality Forecast",
+    description:
+      "A forecasting project focused on analyzing air quality data and predicting pollution trends with a clean, data-driven workflow.",
+    url: "https://github.com/riyasingh49/Air-Quality-Forecast.git",
+  },
+  {
+    image: HostelAttendance,
+    title: "Hostel Attendance System",
+    description:
+      "A hostel attendance system using facial recognition and OTP verification to automate student identity checks, attendance marking, and organized record management.",
+    url: "https://github.com/riyasingh49/Facial_Recognition_Hostel_Attendance_System.git",
+  },
 ];
 
 const Projects = () => {
+  const [showAllProjects, setShowAllProjects] = useState(false);
+  const hasHiddenProjects = projectItems.length > INITIAL_PROJECT_COUNT;
+  const visibleProjects = showAllProjects
+    ? projectItems
+    : projectItems.slice(0, INITIAL_PROJECT_COUNT);
+
+  const handleMoreProjects = () => {
+    if (hasHiddenProjects && !showAllProjects) {
+      setShowAllProjects(true);
+      return;
+    }
+
+    window.open(GITHUB_PROFILE_URL, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div id="projects" className="projects">
       <div className="project-title">
@@ -32,29 +98,31 @@ const Projects = () => {
       </div>
 
       <div className="project-gallery" aria-label="Project previews">
-        {projectItems.map((project, index) => (
-          <article className="project-showcase" key={project.title}>
+        {visibleProjects.map((project) => (
+          <a
+            className="project-showcase"
+            href={project.url}
+            key={project.title}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Open ${project.title} project`}
+          >
             <img src={project.image} alt={`${project.title} preview`} />
             <div className="project-overlay">
-              <span>{String(index + 1).padStart(2, "0")}</span>
               <h2>{project.title}</h2>
               <p>{project.description}</p>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                View Project
-              </a>
             </div>
-          </article>
+          </a>
         ))}
       </div>
 
-      <a
+      <button
+        type="button"
         className="more-projects"
-        href="https://github.com/riyasingh49"
-        target="_blank"
-        rel="noopener noreferrer"
+        onClick={handleMoreProjects}
       >
         More Projects
-      </a>
+      </button>
     </div>
   );
 };
