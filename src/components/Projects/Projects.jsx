@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./Projects.css";
-import Freshmart from "../../assets/Freshmart.png";
-import SMS from "../../assets/SMS.png";
-import R49 from "../../assets/R49.png";
-import ImageSearchEngine from "../../assets/Image_Search_Engine.png";
-import Portfolio from "../../assets/portfolio.png";
-import Air from "../../assets/air.png";
-import MazeGame from "../../assets/maze game.png";
-import HostelAttendance from "../../assets/Hostel_Facial_Attendance_System.png";
+import Freshmart from "../../assets/freshmart.webp";
+import SMS from "../../assets/sms.webp";
+import R49 from "../../assets/r49.webp";
+import ImageSearchEngine from "../../assets/image-search-engine.webp";
+import Portfolio from "../../assets/portfolio.webp";
+import Air from "../../assets/air.webp";
+import MazeGame from "../../assets/maze-game.webp";
+import HostelAttendance from "../../assets/hostel-facial-attendance-system.webp";
 
 const INITIAL_PROJECT_COUNT = 6;
 const GITHUB_PROFILE_URL = "https://github.com/riyasingh49";
