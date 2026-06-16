@@ -31,7 +31,7 @@
 }
 
 .Exp-title span::after {
-  background: linear-gradient(90deg, #ff9f43, transparent);
+  background: linear-gradient(90deg, #ff6fd8, transparent);
 }
 
 .Exp-title h1 {
@@ -79,7 +79,7 @@
   left: 8px;
   width: 1px;
   border-radius: 999px;
-  background: linear-gradient(180deg, #8b5cff 0%, #ff5fb7 52%, #ff9f43 100%);
+  background: linear-gradient(180deg, #3813c2 0%, #8b5cff 45%, #ff6fd8 100%);
 }
 
 .rail-arrow {
@@ -99,16 +99,16 @@
   position: absolute;
   inset: 4px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #8b5cff, #ff5fb7);
+  background: linear-gradient(135deg, #3813c2, #ff6fd8);
 }
 
 .rail-arrow {
   bottom: -2px;
-  border-color: rgba(255, 159, 67, 0.8);
+  border-color: rgba(255, 111, 216, 0.72);
 }
 
 .rail-arrow::after {
-  background: linear-gradient(135deg, #ff5fb7, #ff9f43);
+  background: linear-gradient(135deg, #3813c2, #ff6fd8);
 }
 
 .rail-arrow::before {
@@ -121,7 +121,7 @@
   transform: translateX(-50%);
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 7px solid #ff9f43;
+  border-top: 7px solid #ff6fd8;
 }
 
 .experience-card {
@@ -142,7 +142,7 @@
   left: -56px;
   width: 56px;
   height: 1px;
-  background: linear-gradient(90deg, #8b5cff, #ff5fb7);
+  background: linear-gradient(90deg, #3813c2, #ff6fd8);
 }
 
 .experience-card::after {
@@ -161,17 +161,17 @@
 }
 
 .experience-card:nth-of-type(even) {
-  border-color: rgba(255, 159, 67, 0.72);
+  border-color: rgba(255, 111, 216, 0.62);
 }
 
 .experience-card:nth-of-type(even)::before {
-  background: linear-gradient(90deg, #ff5fb7, #ff9f43);
+  background: linear-gradient(90deg, #3813c2, #ff6fd8);
 }
 
 .experience-card:nth-of-type(even)::after {
-  border-color: rgba(255, 159, 67, 0.8);
+  border-color: rgba(255, 111, 216, 0.72);
   background:
-    radial-gradient(circle, #ff5fb7 0 5px, transparent 6px),
+    radial-gradient(circle, #ff6fd8 0 5px, transparent 6px),
     #101010;
 }
 
@@ -194,7 +194,7 @@
 
 .experience-content h3 {
   margin-top: 6px;
-  background: linear-gradient(267deg, #8b5cff 6%, #ff5fb7 54%, #ff9f43 100%);
+  background: linear-gradient(270deg, #ff6fd8 0%, #c86cff 48%, #7b5cff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -250,7 +250,7 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #ff5fb7;
+  background: #8b5cff;
 }
 
 .experience-tags {
@@ -378,7 +378,7 @@
     height: 29px;
     transform: translateX(-50%);
     border-radius: 999px;
-    background: linear-gradient(180deg, #8b5cff, #ff5fb7, #ff9f43);
+    background: linear-gradient(180deg, #3813c2, #8b5cff, #ff6fd8);
   }
 
   .experience-content {
