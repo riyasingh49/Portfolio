@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import mail from "../../assets/mail.png";
 import git from "../../assets/git.png";
@@ -6,32 +6,40 @@ import linkedin from "../../assets/linkedin.png";
 import map from "../../assets/map.png";
 
 const Contact = () => {
+  const [status, setStatus] = useState("");
+  const [isSending, setIsSending] = useState(false);
+
   const onSubmit = async (event) => {
     event.preventDefault();
-    alert("Message sent successfully ");
     const formData = new FormData(event.target);
-    event.target.reset();
-    // formData.append("access_key", "key");
+    const contactData = Object.fromEntries(formData.entries());
 
-    // try {
-      // const response = await fetch("https://api.web3forms.com/submit", {
-      //   method: "POST",
-      //   body: formData,
-      // });
+    setIsSending(true);
+    setStatus("");
 
-      // const result = await response.json();
-      // console.log("Web3Forms response:", result);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(contactData),
+      });
 
-    //   if (result.success) {
-    //     alert("Message sent successfully!");
-    //     event.target.reset();
-    //   } else {
-    //     alert("Failed: " + result.message);
-    //   }
-    // } catch (error) {
-    //   console.error("Error:", error);
-    //   alert("Something went wrong. Please try again.");
-    // }
+      const result = await response.json();
+
+      if (!response.ok) {
+        setStatus(result.message || "Failed to send message.");
+        return;
+      }
+
+      setStatus("Message sent successfully!");
+      event.target.reset();
+    } catch (error) {
+      setStatus("Something went wrong. Please try again.");
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -80,13 +88,14 @@ const Contact = () => {
         </div>
         <form onSubmit={onSubmit} className="contact-right">
           <label htmlFor="">Your Name</label>
-          <input type="text" placeholder="Enter your name" name="name" />
+          <input type="text" placeholder="Enter your name" name="name" required />
           <label htmlFor="">Your Email</label>
-          <input type="text" placeholder="Enter your email" name="email" />
+          <input type="email" placeholder="Enter your email" name="email" required />
           <label htmlFor="">Write your message here</label>
-          <textarea name="message" rows="5" placeholder="Enter your message" />
-          <button type="submit" className="contact-submit">
-            Submit now
+          <textarea name="message" rows="5" placeholder="Enter your message" required />
+          {status && <p className="contact-status">{status}</p>}
+          <button type="submit" className="contact-submit" disabled={isSending}>
+            {isSending ? "Sending..." : "Submit now"}
           </button>
         </form>
       </div>
