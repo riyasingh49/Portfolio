@@ -43,7 +43,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className='Experience'>
+    <section id="experience" className='Experience'>
       <div className="Exp-title">
         <h1>Experience Journey</h1>
         <p>A glimpse into the experiences that shaped my growth, strengthened my skills, and helped me move closer to my career goals.</p>

@@ -15,12 +15,12 @@ const Footer = () => {
       <ul className="footer-navbar">
         <li>
           <AnchorLink className="anchor-link" href="#home">
-            <p onClick={() => setMenu("home")}>Home</p>
+            <p>Home</p>
           </AnchorLink>{" "}
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#about">
-            <p onClick={() => setMenu("about")}>About</p>
+            <p>About</p>
           </AnchorLink>
         </li>
         <li>
@@ -29,22 +29,27 @@ const Footer = () => {
             offset={50}
             href="#certifications"
           >
-            <p onClick={() => setMenu("certifications")}>Certifications</p>
+            <p>Certifications</p>
           </AnchorLink>
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#skills">
-            <p onClick={() => setMenu("skills")}>Skills</p>
+            <p>Skills</p>
           </AnchorLink>
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#projects">
-            <p onClick={() => setMenu("projects")}>Projects</p>
+            <p>Projects</p>
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink className="anchor-link" offset={50} href="#experience">
+            <p>Experience</p>
           </AnchorLink>
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#contact">
-            <p onClick={() => setMenu("contact")}>Contact </p>
+            <p>Contact </p>
           </AnchorLink>
         </li>
       </ul>
