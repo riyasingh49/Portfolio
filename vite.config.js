@@ -58,7 +58,7 @@ export default defineConfig(({ mode }) => {
   }
 
   return {
-    base: '/Portfolio/',
+    base: process.env.VERCEL ? '/' : '/Portfolio/',
     plugins: [react(), contactApiPlugin()],
     server: {
       host: true,
