@@ -5,6 +5,7 @@ import HTML from '../../assets/HTML.jpeg';
 import JavaScript from "../../assets/JavaScript.jpg";
 import algouniversity from "../../assets/algouniversity.png";
 import DataAnalysis from "../../assets/DataAnalysis.jpg"
+import Claude from "../../assets/claude.jpg"
 
 const Certificates = () => {
   return (
@@ -19,6 +20,7 @@ const Certificates = () => {
         <a href="https://drive.google.com/file/d/1-zGvWYe9JZWoSW8sYHuGYwa7m64cYlUg/view?usp=sharing " target="_blank" rel = "noopener noreferrer" ><img src={JavaScript} alt="" /></a>
         <a href="https://drive.google.com/file/d/15i1_OOhRk5q1_ORJHPTQyJoQKlc_1zlc/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img src={algouniversity} alt="" /></a>
         <a href="https://drive.google.com/file/d/1YJXqeDo-VloI_oI9Fbj7mWoy8-Z8Pq9Q/view?usp=sharing" target="_blank" rel = "noopener noreferrer" ><img src={DataAnalysis} alt="" /></a>
+        <a href="https://drive.google.com/file/d/1xsQf2a5z5ffhiTX_7sraDDX-VzaTdhlj/view?usp=share_link" target="_blank" rel = "noopener noreferrer" ><img src={Claude} alt="Claude certificate" /></a>
 
       </div>
       

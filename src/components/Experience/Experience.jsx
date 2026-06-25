@@ -20,7 +20,7 @@ const experiences = [
     contributions: [
       'Built full-stack features for an e-commerce platform, including dashboard modules such as Contact Us, Coupons, Saved Addresses, Wishlist and user assistance workflows.',
       'Developed frontend and backend functionality using reusable UI components, server-side operations, REST APIs, database-driven flows, and scalable application structure.',
-      'Worked on testing, performance, and AI-based support features, including Playwright automation testing, Redis caching, and a domain-specific chatbot for food-related user queries.',
+      'Worked on testing and performance improvements, including Playwright automation testing, Redis caching, and support for a domain-specific chatbot for food-related user queries.',
     ],
     stack: [
       'Next.js',
