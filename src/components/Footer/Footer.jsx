@@ -74,7 +74,7 @@ const Footer = () => {
       </div>
       <hr />
       <div className="footer-bottom">
-        <p>© 2025 Riya Singh. All rights reserved</p>
+        <p>© 2026 Riya Singh. All rights reserved</p>
       </div>
     </div>
   );
