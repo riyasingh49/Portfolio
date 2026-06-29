@@ -88,7 +88,7 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects" className="projects">
+    <div className="projects">
       <div className="project-title">
         <h1>My Projects</h1>
         <p>
@@ -107,7 +107,12 @@ const Projects = () => {
             rel="noopener noreferrer"
             aria-label={`Open ${project.title} project`}
           >
-            <img src={project.image} alt={`${project.title} preview`} />
+            <img
+              src={project.image}
+              alt={`${project.title} preview`}
+              loading="lazy"
+              decoding="async"
+            />
             <div className="project-overlay">
               <h2>{project.title}</h2>
               <p>{project.description}</p>

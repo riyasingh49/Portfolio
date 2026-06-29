@@ -35,7 +35,7 @@ const Contact = () => {
 
       setStatus("Message sent successfully!");
       event.target.reset();
-    } catch (error) {
+    } catch {
       setStatus("Something went wrong. Please try again.");
     } finally {
       setIsSending(false);
@@ -43,7 +43,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="contact">
+    <div className="contact">
       <div className="contact-title">
         <h1>Get in Touch</h1>
       </div>
@@ -55,13 +55,13 @@ const Contact = () => {
           </p>
           <div className="contact-details">
             <div className="contact-detail">
-              <img src={mail} alt="" />
+              <img src={mail} alt="" loading="lazy" decoding="async" />
               <a href="mailto:riyasingh454247@gmail.com?subject=Portfolio Inquiry&body=Hi Riya, I saw your portfolio and...">
                 riyasingh454247@gmail.com
               </a>
             </div>
             <div className="contact-detail">
-              <img src={git} alt="" />
+              <img src={git} alt="" loading="lazy" decoding="async" />
               <a
                 href="https://github.com/riyasingh49"
                 target="_blank"
@@ -71,7 +71,7 @@ const Contact = () => {
               </a>
             </div>
             <div className="contact-detail">
-              <img src={linkedin} alt="" />
+              <img src={linkedin} alt="" loading="lazy" decoding="async" />
               <a
                 href="https://www.linkedin.com/in/riya-singh-138b352a4"
                 target="_blank"
@@ -81,8 +81,8 @@ const Contact = () => {
               </a>
             </div>
             <div className="contact-detail">
-              <img src={map} alt="" />
-              <p>Lucknow, Uttar Pradesh</p>
+              <img src={map} alt="" loading="lazy" decoding="async" />
+              <p>Etawah, Uttar Pradesh</p>
             </div>
           </div>
         </div>

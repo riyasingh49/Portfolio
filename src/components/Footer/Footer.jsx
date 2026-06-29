@@ -55,21 +55,21 @@ const Footer = () => {
       </ul>
       <div className="footer-connection">
         <a href="mailto:riyasingh454247@gmail.com?subject=Portfolio Inquiry&body=Hi Riya, I saw your portfolio and...">
-          <img src={mail} alt="" />
+          <img src={mail} alt="" loading="lazy" decoding="async" />
         </a>
         <a
           href="https://www.linkedin.com/in/riya-singh-138b352a4"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={linkedin} alt="" />
+          <img src={linkedin} alt="" loading="lazy" decoding="async" />
         </a>
         <a
           href="https://github.com/riyasingh49"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={git} alt="" />
+          <img src={git} alt="" loading="lazy" decoding="async" />
         </a>
       </div>
       <hr />

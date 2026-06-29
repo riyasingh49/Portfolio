@@ -1,10 +1,9 @@
 import React from "react";
 import "./About.css";
-import Riya from "../../assets/Riya.jpeg";
 
 const About = () => {
   return (
-    <div id = "about" className="about">
+    <div className="about">
       <div className="about-title">
         <h1>About me</h1>
       </div>
