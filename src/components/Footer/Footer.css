@@ -3,8 +3,8 @@
   flex-direction: column;
   background: #181818;
   align-items: center;
-  padding: 20px 40px;
-  gap: 30px;
+  padding: 32px clamp(20px, 5vw, 72px) 24px;
+  gap: 24px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -15,41 +15,69 @@
 .footer-hero h1 {
   font-size: 34px;
   font-weight: 700;
+  line-height: 1.2;
 }
 .footer-navbar {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
-  gap: 20px;
+  gap: 12px 24px;
   font-size: 18px;
+  width: 100%;
+}
+.footer-navbar a {
+  display: inline-flex;
+  padding: 6px 0;
+}
+.footer-connection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.footer-connection a {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
 }
 .footer-connection img {
-  width: 60px;
-  height: 60px;
-  padding: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  object-fit: contain;
 }
 .footer hr {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   border: none;
   border-top: 1px solid #444;
 }
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+}
 .footer-bottom p {
   font-size: 16px;
-  margin-top: -20px;
+  line-height: 1.5;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .footer {
+    padding: 28px 24px 20px;
+    gap: 20px;
+  }
   .footer-hero h1 {
     font-size: 24px;
-    font-weight: 700;
   }
   .footer-navbar {
     font-size: 16px;
+    gap: 8px 18px;
   }
-  .footer-connection img {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
+  .footer-connection a {
+    width: 48px;
+    height: 48px;
   }
   .footer-bottom p {
     font-size: 14px;
@@ -57,25 +85,25 @@
 }
 @media (max-width: 430px) {
   .footer {
-    padding: 10px 20px;
-    padding-top: 20px;
+    padding: 24px 16px 18px;
+    gap: 16px;
   }
   .footer-hero h1 {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 22px;
   }
   .footer-navbar {
-    font-size: 12px;
+    max-width: 320px;
+    gap: 4px 14px;
+    font-size: 14px;
   }
-  .footer-connection img {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
+  .footer-connection {
+    gap: 8px;
+  }
+  .footer-connection a {
+    width: 44px;
+    height: 44px;
   }
   .footer-bottom p {
-    font-size: 10px;
-  }
-  .footer-bottom {
-    height: px;
+    font-size: 12px;
   }
 }
